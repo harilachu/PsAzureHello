@@ -3,11 +3,18 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>aspnet-PsAzureHello-7D433445-ECB4-4A20-8B74-55A13D266FB5</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/dce17d14-33d9-4f36-a346-96268a8e1369/resourcegroups/WebSqlApp/providers/microsoft.insights/components/PsAzureHello</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/dce17d14-33d9-4f36-a346-96268a8e1369/resourcegroups/WebSqlApp/providers/microsoft.insights/components/PsAzureHello</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>
